@@ -26,8 +26,33 @@
 @synthesize upperButton;
 @synthesize lowerButton;
 
+@synthesize upperResetButton;
+@synthesize lowerResetButton;
+
 @synthesize upperLabel;
 @synthesize lowerLabel;
+
+-(IBAction)upperResetButtonTapped:(id)sender
+{
+    upperTimeBase = 0;
+    if (timer != nil) {
+        timerStartedAt = [[NSDate date] timeIntervalSince1970];
+    } else {
+        upperTimeTotal = 0;
+        upperLabel.text = [self timeLabel:upperTimeTotal];
+    }
+}
+
+-(IBAction)lowerResetButtonTapped:(id)sender
+{
+    lowerTimeBase = 0;
+    if (timer != nil) {
+        timerStartedAt = [[NSDate date] timeIntervalSince1970];
+    } else {
+        lowerTimeTotal = 0;
+        lowerLabel.text = [self timeLabel:lowerTimeTotal];
+    }
+}
 
 -(IBAction)upperButtonTapped:(id)sender
 {
@@ -92,12 +117,14 @@
 -(void)changeButtonLabel:(UIButton *)button label:(NSString *)label
 {
     [button setTitle:label forState:UIControlStateNormal];
-    [button setTitle:label forState:UIControlStateHighlighted];
+    //[button setTitle:label forState:UIControlStateHighlighted];
 }
 
 -(void)timerStop
 {
-    [self.timer invalidate];
+    [timer invalidate];
+    [timer release];
+    timer = nil;
 }
 
 -(void)timerStart
@@ -140,6 +167,9 @@
     
     [upperButton release];
     [lowerButton release];
+    
+    [upperResetButton release];
+    [lowerResetButton release];
     
     [super dealloc];
 }
