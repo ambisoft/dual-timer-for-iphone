@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDD5A47164A451D006939B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A46164A451D006939B9 /* UIKit.framework */; };
+		4DDD5A49164A451D006939B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A48164A451D006939B9 /* Foundation.framework */; };
+		4DDD5A4B164A451D006939B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A4A164A451D006939B9 /* CoreGraphics.framework */; };
+		4DDD5A51164A451D006939B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A4F164A451D006939B9 /* InfoPlist.strings */; };
+		4DDD5A53164A451D006939B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD5A52164A451D006939B9 /* main.m */; };
+		4DDD5A57164A451D006939B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD5A56164A451D006939B9 /* AppDelegate.m */; };
+		4DDD5A59164A451D006939B9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A58164A451D006939B9 /* Default.png */; };
+		4DDD5A5B164A451D006939B9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A5A164A451D006939B9 /* Default@2x.png */; };
+		4DDD5A5D164A451D006939B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A5C164A451D006939B9 /* Default-568h@2x.png */; };
+		4DDD5A60164A451D006939B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD5A5F164A451D006939B9 /* ViewController.m */; };
+		4DDD5A63164A451D006939B9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A61164A451D006939B9 /* ViewController.xib */; };
+		4DDD5A6B164A451E006939B9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A6A164A451E006939B9 /* SenTestingKit.framework */; };
+		4DDD5A6C164A451E006939B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A46164A451D006939B9 /* UIKit.framework */; };
+		4DDD5A6D164A451E006939B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDD5A48164A451D006939B9 /* Foundation.framework */; };
+		4DDD5A75164A451E006939B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD5A73164A451E006939B9 /* InfoPlist.strings */; };
+		4DDD5A78164A451E006939B9 /* DualTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD5A77164A451E006939B9 /* DualTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DDD5A6E164A451E006939B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDD5A39164A451D006939B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDD5A41164A451D006939B9;
+			remoteInfo = DualTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DDD5A42164A451D006939B9 /* DualTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDD5A46164A451D006939B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DDD5A48164A451D006939B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DDD5A4A164A451D006939B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DDD5A4E164A451D006939B9 /* DualTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DualTimer-Info.plist"; sourceTree = "<group>"; };
+		4DDD5A50164A451D006939B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DDD5A52164A451D006939B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DDD5A54164A451D006939B9 /* DualTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DualTimer-Prefix.pch"; sourceTree = "<group>"; };
+		4DDD5A55164A451D006939B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DDD5A56164A451D006939B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DDD5A58164A451D006939B9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4DDD5A5A164A451D006939B9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4DDD5A5C164A451D006939B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4DDD5A5E164A451D006939B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4DDD5A5F164A451D006939B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4DDD5A62164A451D006939B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		4DDD5A69164A451E006939B9 /* DualTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDD5A6A164A451E006939B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4DDD5A72164A451E006939B9 /* DualTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DualTimerTests-Info.plist"; sourceTree = "<group>"; };
+		4DDD5A74164A451E006939B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DDD5A76164A451E006939B9 /* DualTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DualTimerTests.h; sourceTree = "<group>"; };
+		4DDD5A77164A451E006939B9 /* DualTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DualTimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDD5A3F164A451D006939B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A47164A451D006939B9 /* UIKit.framework in Frameworks */,
+				4DDD5A49164A451D006939B9 /* Foundation.framework in Frameworks */,
+				4DDD5A4B164A451D006939B9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDD5A65164A451E006939B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A6B164A451E006939B9 /* SenTestingKit.framework in Frameworks */,
+				4DDD5A6C164A451E006939B9 /* UIKit.framework in Frameworks */,
+				4DDD5A6D164A451E006939B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDD5A37164A451D006939B9 = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A4C164A451D006939B9 /* DualTimer */,
+				4DDD5A70164A451E006939B9 /* DualTimerTests */,
+				4DDD5A45164A451D006939B9 /* Frameworks */,
+				4DDD5A43164A451D006939B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDD5A43164A451D006939B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A42164A451D006939B9 /* DualTimer.app */,
+				4DDD5A69164A451E006939B9 /* DualTimerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDD5A45164A451D006939B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A46164A451D006939B9 /* UIKit.framework */,
+				4DDD5A48164A451D006939B9 /* Foundation.framework */,
+				4DDD5A4A164A451D006939B9 /* CoreGraphics.framework */,
+				4DDD5A6A164A451E006939B9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DDD5A4C164A451D006939B9 /* DualTimer */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A55164A451D006939B9 /* AppDelegate.h */,
+				4DDD5A56164A451D006939B9 /* AppDelegate.m */,
+				4DDD5A5E164A451D006939B9 /* ViewController.h */,
+				4DDD5A5F164A451D006939B9 /* ViewController.m */,
+				4DDD5A61164A451D006939B9 /* ViewController.xib */,
+				4DDD5A4D164A451D006939B9 /* Supporting Files */,
+			);
+			name = DualTimer;
+			path = DualTimer;
+			sourceTree = "<group>";
+		};
+		4DDD5A4D164A451D006939B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A4E164A451D006939B9 /* DualTimer-Info.plist */,
+				4DDD5A4F164A451D006939B9 /* InfoPlist.strings */,
+				4DDD5A52164A451D006939B9 /* main.m */,
+				4DDD5A54164A451D006939B9 /* DualTimer-Prefix.pch */,
+				4DDD5A58164A451D006939B9 /* Default.png */,
+				4DDD5A5A164A451D006939B9 /* Default@2x.png */,
+				4DDD5A5C164A451D006939B9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DDD5A70164A451E006939B9 /* DualTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A76164A451E006939B9 /* DualTimerTests.h */,
+				4DDD5A77164A451E006939B9 /* DualTimerTests.m */,
+				4DDD5A71164A451E006939B9 /* Supporting Files */,
+			);
+			path = DualTimerTests;
+			sourceTree = "<group>";
+		};
+		4DDD5A71164A451E006939B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD5A72164A451E006939B9 /* DualTimerTests-Info.plist */,
+				4DDD5A73164A451E006939B9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDD5A41164A451D006939B9 /* DualTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDD5A7B164A451E006939B9 /* Build configuration list for PBXNativeTarget "DualTimer" */;
+			buildPhases = (
+				4DDD5A3E164A451D006939B9 /* Sources */,
+				4DDD5A3F164A451D006939B9 /* Frameworks */,
+				4DDD5A40164A451D006939B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DualTimer;
+			productName = DualTimer;
+			productReference = 4DDD5A42164A451D006939B9 /* DualTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DDD5A68164A451E006939B9 /* DualTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDD5A7E164A451E006939B9 /* Build configuration list for PBXNativeTarget "DualTimerTests" */;
+			buildPhases = (
+				4DDD5A64164A451E006939B9 /* Sources */,
+				4DDD5A65164A451E006939B9 /* Frameworks */,
+				4DDD5A66164A451E006939B9 /* Resources */,
+				4DDD5A67164A451E006939B9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDD5A6F164A451E006939B9 /* PBXTargetDependency */,
+			);
+			name = DualTimerTests;
+			productName = DualTimerTests;
+			productReference = 4DDD5A69164A451E006939B9 /* DualTimerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDD5A39164A451D006939B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Mark Publicewicz";
+			};
+			buildConfigurationList = 4DDD5A3C164A451D006939B9 /* Build configuration list for PBXProject "DualTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DDD5A37164A451D006939B9;
+			productRefGroup = 4DDD5A43164A451D006939B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDD5A41164A451D006939B9 /* DualTimer */,
+				4DDD5A68164A451E006939B9 /* DualTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDD5A40164A451D006939B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A51164A451D006939B9 /* InfoPlist.strings in Resources */,
+				4DDD5A59164A451D006939B9 /* Default.png in Resources */,
+				4DDD5A5B164A451D006939B9 /* Default@2x.png in Resources */,
+				4DDD5A5D164A451D006939B9 /* Default-568h@2x.png in Resources */,
+				4DDD5A63164A451D006939B9 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDD5A66164A451E006939B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A75164A451E006939B9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DDD5A67164A451E006939B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDD5A3E164A451D006939B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A53164A451D006939B9 /* main.m in Sources */,
+				4DDD5A57164A451D006939B9 /* AppDelegate.m in Sources */,
+				4DDD5A60164A451D006939B9 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDD5A64164A451E006939B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD5A78164A451E006939B9 /* DualTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DDD5A6F164A451E006939B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDD5A41164A451D006939B9 /* DualTimer */;
+			targetProxy = 4DDD5A6E164A451E006939B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DDD5A4F164A451D006939B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD5A50164A451D006939B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DDD5A61164A451D006939B9 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD5A62164A451D006939B9 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		4DDD5A73164A451E006939B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD5A74164A451E006939B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DDD5A79164A451E006939B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DDD5A7A164A451E006939B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDD5A7C164A451E006939B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DualTimer/DualTimer-Prefix.pch";
+				INFOPLIST_FILE = "DualTimer/DualTimer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = DualTimer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4DDD5A7D164A451E006939B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DualTimer/DualTimer-Prefix.pch";
+				INFOPLIST_FILE = "DualTimer/DualTimer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = DualTimer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4DDD5A7F164A451E006939B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DualTimer.app/DualTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DualTimer/DualTimer-Prefix.pch";
+				INFOPLIST_FILE = "DualTimerTests/DualTimerTests-Info.plist";
+				PRODUCT_NAME = DualTimerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4DDD5A80164A451E006939B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DualTimer.app/DualTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DualTimer/DualTimer-Prefix.pch";
+				INFOPLIST_FILE = "DualTimerTests/DualTimerTests-Info.plist";
+				PRODUCT_NAME = DualTimerTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDD5A3C164A451D006939B9 /* Build configuration list for PBXProject "DualTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDD5A79164A451E006939B9 /* Debug */,
+				4DDD5A7A164A451E006939B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDD5A7B164A451E006939B9 /* Build configuration list for PBXNativeTarget "DualTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDD5A7C164A451E006939B9 /* Debug */,
+				4DDD5A7D164A451E006939B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDD5A7E164A451E006939B9 /* Build configuration list for PBXNativeTarget "DualTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDD5A7F164A451E006939B9 /* Debug */,
+				4DDD5A80164A451E006939B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DDD5A39164A451D006939B9 /* Project object */;
+}
