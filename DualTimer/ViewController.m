@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#define kUpperReset 0
+#define kLowerReset 1
+
 #define TIMER_TICK_INTERVAL 0.1
 
 @interface ViewController ()
@@ -16,6 +19,11 @@
 -(void)timerStart;
 -(void)timerStop;
 -(void)timerTick;
+
+-(void)showResetAlertForType:(NSInteger)type;
+
+-(void)upperResetDo;
+-(void)lowerResetDo;
 
 @end
 
@@ -32,10 +40,40 @@
 @synthesize upperLabel;
 @synthesize lowerLabel;
 
--(IBAction)upperResetButtonTapped:(id)sender
+
+
+-(void)showResetAlertForType:(NSInteger)type
 {
+    UIAlertView *alertView = [[UIAlertView alloc]
+                          initWithTitle: @"Reset Timer"
+                          message: @"Do you really want to reset this timer?"
+                          delegate:self
+                          cancelButtonTitle:@"Cancel"
+                          otherButtonTitles:@"Reset",nil];
+    alertView.tag = type;
+        
+    [alertView show];
+    [alertView release];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"Clicked: %d", buttonIndex);
+    if (buttonIndex == 1) {
+        if (alertView.tag == kUpperReset) {
+            [self upperResetDo];
+        }
+        if (alertView.tag == kLowerReset) {
+            [self lowerResetDo];
+        }        
+    }
+}
+
+-(void)upperResetDo
+{
+    NSLog(@"Upper reset do");
     upperTimeBase = 0;
-    if (timer != nil) {
+    if ((timer != nil) && upperIsRunning) {
         timerStartedAt = [[NSDate date] timeIntervalSince1970];
     } else {
         upperTimeTotal = 0;
@@ -43,15 +81,28 @@
     }
 }
 
--(IBAction)lowerResetButtonTapped:(id)sender
+-(void)lowerResetDo
 {
+    NSLog(@"Lower reset do");
     lowerTimeBase = 0;
-    if (timer != nil) {
+    if ((timer != nil) && lowerIsRunning) {
         timerStartedAt = [[NSDate date] timeIntervalSince1970];
     } else {
         lowerTimeTotal = 0;
         lowerLabel.text = [self timeLabel:lowerTimeTotal];
     }
+}
+
+-(IBAction)upperResetButtonTapped:(id)sender
+{
+    //[self upperResetDo];
+    [self showResetAlertForType:kUpperReset];
+}
+
+-(IBAction)lowerResetButtonTapped:(id)sender
+{
+    //[self lowerResetDo];
+    [self showResetAlertForType:kLowerReset];
 }
 
 -(IBAction)upperButtonTapped:(id)sender
